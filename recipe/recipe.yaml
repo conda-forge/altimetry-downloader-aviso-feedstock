@@ -1,7 +1,8 @@
 schema_version: 1
 
 context:
-  version: 0.3.0
+  version: "0.4.0"
+  python_min: "3.11"
 
 package:
   name: altimetry-downloader-aviso
@@ -9,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/altimetry-downloader-aviso/altimetry_downloader_aviso-${{ version }}.tar.gz
-  sha256: 8554069e4a81a3fecaba13cb595c0a6609f6da8f6f71e55dd696462c8306e20b
+  sha256: 39dd998b74886b9b8454bf5518ab8654636fce9cbff33dbaa59c847c94537bea
 
 build:
   noarch: python
@@ -30,7 +31,7 @@ requirements:
     - typer
     - siphon
     - rich
-    - files_collections >=1
+    - files_collections >=2
     - pyyaml
     - pydantic
 
