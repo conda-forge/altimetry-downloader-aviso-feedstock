@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.4.0"
+  version: "0.5.0"
   python_min: "3.11"
 
 package:
@@ -10,11 +10,15 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/altimetry-downloader-aviso/altimetry_downloader_aviso-${{ version }}.tar.gz
-  sha256: 39dd998b74886b9b8454bf5518ab8654636fce9cbff33dbaa59c847c94537bea
+  sha256: 1f68ff79df98efeef897ca1ffc1af8de91c35a32fe47a70f515ffe2f98997e97
 
 build:
   noarch: python
   number: 0
+  python:
+    entry_points:
+      - altimetry-downloader-aviso = altimetry_downloader_aviso.cli:app
+
   script:
     - python -m pip install . -vv
 
@@ -34,6 +38,9 @@ requirements:
     - files_collections >=2
     - pyyaml
     - pydantic
+    - h5netcdf
+    - netCDF4
+    - xarray
 
 tests:
   - python:
