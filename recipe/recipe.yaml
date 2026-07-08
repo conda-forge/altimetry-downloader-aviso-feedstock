@@ -15,6 +15,10 @@ source:
 build:
   noarch: python
   number: 0
+  python:
+    entry_points:
+      - altimetry-downloader-aviso = altimetry_downloader_aviso.cli:app
+
   script:
     - python -m pip install . -vv
 
@@ -34,6 +38,9 @@ requirements:
     - files_collections >=2
     - pyyaml
     - pydantic
+    - h5netcdf
+    - netCDF4
+    - xarray
 
 tests:
   - python:
