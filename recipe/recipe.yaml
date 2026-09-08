@@ -36,6 +36,7 @@ requirements:
     - siphon
     - rich
     - files_collections >=2
+    - altimetry-search >=2.1.0
     - pyyaml
     - pydantic
     - h5netcdf
