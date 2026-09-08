@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.5.0"
+  version: "0.6.0"
   python_min: "3.11"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/altimetry-downloader-aviso/altimetry_downloader_aviso-${{ version }}.tar.gz
-  sha256: 1f68ff79df98efeef897ca1ffc1af8de91c35a32fe47a70f515ffe2f98997e97
+  sha256: 1aeb12f08eaea20fbc871480141b35d857f0609aeab3b4ded2bcc48c66903bd7
 
 build:
   noarch: python
