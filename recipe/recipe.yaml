@@ -1,8 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.7.0"
-  python_min: "3.11"
+version: "0.7.0"
 
 package:
   name: altimetry-downloader-aviso
@@ -36,6 +35,7 @@ requirements:
     - siphon
     - rich
     - files_collections >=2
+    - altimetry-search >=2.1.0
     - pyyaml
     - pydantic
     - h5netcdf
